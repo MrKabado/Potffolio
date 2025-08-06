@@ -12,7 +12,7 @@ function ServicesProjects() {
     <div className='p-5 text-[#1E293B] border-l-5 rounded-2xl font-poppins'>
       <h1 className='flex items-center text-xl font-semibold'>What I Create For You</h1>
 
-      <div className='my-5 border-gray-400 border-b-4 pb-10'>
+      <div className='grid grid-col gap-5 my-5 border-gray-400 border-b-4 pb-10'>
         <div className='shadow-md shadow-gray-300 p-2 rounded-xl'>
           <PaintBrushIcon className='w-8'/>
           <h1 className='font-semibold text-lg'>Custom Website Design</h1>
