@@ -1,6 +1,6 @@
 import {React, useState} from 'react'
 import { Link } from 'react-router-dom'
-import { ChevronDoubleDownIcon, ChevronDoubleUpIcon} from '@heroicons/react/24/outline'
+import { ChevronDoubleDownIcon, ChevronDoubleUpIcon, UserCircleIcon, HomeIcon, BriefcaseIcon, PhoneIcon} from '@heroicons/react/24/outline'
 
 function Header() {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,10 +14,10 @@ function Header() {
 
       {isVisible && (
       <nav className='p-1 flex flex-col items-center text-[#1E293B] font-medium text-[16px]'>
-        <Link to={"/"}>Home</Link>
-        <Link>About Me</Link>
-        <Link>Services and Projects</Link>
-        <Link>Contact Me</Link>
+        <Link to={"/"} className='flex items-center'><HomeIcon className='hidden w-5'/> Home</Link>
+        <Link to={"/aboutme"} className='flex items-center'><UserCircleIcon className='hidden w-5'/> About Me</Link>
+        <Link className='flex items-center'><BriefcaseIcon className='hidden w-5'/> Services and Projects</Link>
+        <Link className='flex items-center'><PhoneIcon className='hidden w-5'/> Contact Me</Link>
       </nav>
       )}
       

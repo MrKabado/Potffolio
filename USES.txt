@@ -10,3 +10,10 @@ NOTES:
   font-size for head text 1.8rem while button is 1rem
 
   HOMEPAGE SCROLL HIDDEN
+
+  SKILL 1 #d946ef
+  SKILL 2 #22d3ee
+  SKILL 3 #fb923c
+  SKILL 4 #40c370
+  SKILL 5 #a855f7
+  SKILL 6 red-500
