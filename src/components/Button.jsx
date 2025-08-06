@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Button({to, className, text, divclassName}) {
+function Button({to, className, text, divclassName, icon}) {
   return (
     <div className={divclassName}>
-      <Link to={to} className={className}>{text}</Link>
+      <Link to={to} className={className}>
+        {text}
+        {icon}
+      </Link>
     </div>
   )
 }

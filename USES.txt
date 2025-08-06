@@ -6,3 +6,7 @@ NOTES:
   *page.jsx is having margin x,y 5
 
   should use rem rather than px and %
+
+  font-size for head text 1.8rem while button is 1rem
+
+  HOMEPAGE SCROLL HIDDEN

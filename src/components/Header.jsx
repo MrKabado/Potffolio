@@ -14,7 +14,7 @@ function Header() {
 
       {isVisible && (
       <nav className='p-1 flex flex-col items-center text-[#1E293B] font-medium text-[16px]'>
-        <Link>Home</Link>
+        <Link to={"/"}>Home</Link>
         <Link>About Me</Link>
         <Link>Services and Projects</Link>
         <Link>Contact Me</Link>
