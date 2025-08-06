@@ -2,6 +2,7 @@ import React from 'react'
 import {PhoneIcon, EnvelopeIcon} from '@heroicons/react/24/outline';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+import Button from '../components/Button'
 
 function ContactMe() {
   return (
@@ -27,6 +28,7 @@ function ContactMe() {
         <input type="text" placeholder='Your Name' className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-[#1E293B] focus:outline-[#1E293B]'/>
         <input type="email" placeholder='Your Email' className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-[#1E293B] focus:outline-[#1E293B]'/>
         <textarea name="" id="" cols="30" rows="5" placeholder='Your Message' className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-[#1E293B] focus:outline-[#1E293B]'></textarea>
+        <Button text={"Submit Message"} className={"border py-1 px-4 rounded-lg bg-[#1E293B] text-white"} divclassName={"flex justify-center w-auto"}/>
       </div>
     </div>
   )

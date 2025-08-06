@@ -81,7 +81,7 @@ function Aboutmepage() {
 
       <div className='p-2 my-2 shadow-md shadow-gray-300 rounded-lg'>
       <h1 className='font-semibold text-xl my-2'>Ready to bring ideas to life?</h1>
-      <p className='text-[#1E293B] text-sm'>I offer creative, reliable, and efficient solutions that go beyond just code. Tap in and explore what I can do for you — because your next big project deserves nothing less.</p><Button text={"Reach Out!"} className={"text-blue-500 inline-block"}/>
+      <p className='text-[#1E293B] text-sm'>I offer creative, reliable, and efficient solutions that go beyond just code. Tap in and explore what I can do for you — because your next big project deserves nothing less.</p><Button to={"/contact-me"} text={"Reach Out!"} className={"text-blue-500 inline-block"}/>
       </div>
     </div>
   )
