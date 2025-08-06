@@ -9,11 +9,11 @@ function Header() {
     setIsVisible(!isVisible);
   }
   return (
-    <header className='font-sans drop-shadow p-2 flex flex-col items-center bg-white'>
+    <header className='font-sans shadow-sm shadow-gray-300 p-2 flex flex-col items-center bg-white'>
       <h1 className='text-[#1E293B] font-semibold text-3xl font-poppins'>Portfolio</h1>
 
       {isVisible && (
-      <nav className='p-1 flex flex-col items-center text-[#1E293B] font-medium text-[14px]'>
+      <nav className='p-1 flex flex-col items-center text-[#1E293B] font-medium text-[16px]'>
         <Link>Home</Link>
         <Link>About Me</Link>
         <Link>Services and Projects</Link>

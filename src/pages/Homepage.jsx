@@ -9,12 +9,12 @@ function Homepage() {
         <img src={ProfilePic} alt="profile picture" className='w-[50%] border-[#1E293B] border-4 rounded-full bg-[#1E293B]'/>
       </div>
       <div>
-        <h1 className='text-[2.1rem] leading-10 text-center'>
+        <h1 className='text-[1.8rem] leading-10 text-center font-poppins text-[#1E293B]'>
           Hi there!<br/>I am <span className='font-semibold'>Jerson Jay</span><br/>an Aspiring<br/><span className='font-semibold'>Web Developer</span>
         </h1>
       </div>
 
-      <Button text={"Contact Me"} className={"border py-2 px-10 text-center text-[25px] rounded-xl bg-[#1E293B] text-white"} divclassName={"flex justify-center"}/>
+      <Button text={"Contact Me"} className={"font-poppins border py-1 px-8 text-center text-[20px] rounded-xl bg-[#1E293B] text-white"} divclassName={"flex justify-center"}/>
     </div>
   )
 }
