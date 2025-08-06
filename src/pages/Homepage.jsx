@@ -1,7 +1,7 @@
 import React from 'react'
 import ProfilePic from '../assets/profile-no-bg.png'
 import Button from '../components/Button'
-import {HandRaisedIcon, PhoneArrowDownLeftIcon} from '@heroicons/react/24/outline'
+import {HandRaisedIcon, PhoneArrowDownLeftIcon, PaintBrushIcon, DevicePhoneMobileIcon, UserCircleIcon} from '@heroicons/react/24/outline'
 
 function Homepage() {
   return (

@@ -17,3 +17,12 @@ NOTES:
   SKILL 4 #40c370
   SKILL 5 #a855f7
   SKILL 6 red-500
+
+  title text must be xl
+  title des must be md or sm
+
+rpoject1 blue 400
+project2 #8DA4D0
+project3 red-400
+project4 sky-300
+  

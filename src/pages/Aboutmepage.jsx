@@ -11,7 +11,7 @@ function Aboutmepage() {
   }
 
   return (
-    <div className=' p-5 text-[#1E293B] border-l-7 rounded-2xl font-poppins'>
+    <div className='p-5 text-[#1E293B] border-l-5 rounded-2xl font-poppins'>
       <h1 className='flex items-center text-xl font-semibold'><UserIcon className='w-8'/>Who Am I?</h1>
       <div className='border p-2 my-5 bg-[#1E293B] rounded-lg'>
         <p className='text-white text-justify'>Hi, I’m Jerson Jay — a dedicated Information Technology student passionate about turning ideas into digital solutions. I have a passion for technology and a knack for problem-solving, aiming to create innovative solutions that meet and exceed expectations.</p>
