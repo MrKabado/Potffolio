@@ -20,8 +20,8 @@ function Header() {
       <nav className='p-1 flex flex-col items-center text-[#1E293B] font-medium text-[16px]'>
         <Link onClick={returnClick} to={"/"} className='flex items-center'><HomeIcon className='hidden w-5'/> Home</Link>
         <Link onClick={returnClick} to={"/aboutme"} className='flex items-center'><UserCircleIcon className='hidden w-5'/> About Me</Link>
-        <Link onClick={returnClick} to={"/services&projects"} className='flex items-center'><BriefcaseIcon className='hidden w-5'/> Services and Projects</Link>
-        <Link onClick={returnClick} className='flex items-center'><PhoneIcon className='hidden w-5'/> Contact Me</Link>
+        <Link onClick={returnClick} to={"/services-and-projects"} className='flex items-center'><BriefcaseIcon className='hidden w-5'/> Services and Projects</Link>
+        <Link onClick={returnClick} to={"/contact-me"} className='flex items-center'><PhoneIcon className='hidden w-5'/> Contact Me</Link>
       </nav>
       )}
       

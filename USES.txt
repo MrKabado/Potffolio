@@ -25,4 +25,8 @@ rpoject1 blue 400
 project2 #8DA4D0
 project3 red-400
 project4 sky-300
+
+div shadow-md shadow-gray-300
+
+title page text-xl semibold
   

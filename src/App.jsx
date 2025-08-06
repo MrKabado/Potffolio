@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Homepage from './pages/Homepage'
 import Aboutmepage from './pages/Aboutmepage'
 import ServicesProjects from './pages/ServicesProjects'
+import ContactMe from './pages/ContactMe'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Homepage />}/>
         <Route path='/aboutme' element={<Aboutmepage />}/>
-        <Route path='/services&projects' element={<ServicesProjects />}/>
+        <Route path='/services-and-projects' element={<ServicesProjects />}/>
+        <Route path='/contact-me' element={<ContactMe />}/>
       </Routes>
       </div>    
     </BrowserRouter>
