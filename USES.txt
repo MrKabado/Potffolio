@@ -1,0 +1,8 @@
+NOTES:
+  main color: #1E293B
+  
+  font-medium
+  
+  *page.jsx is having margin x,y 5
+
+  should use rem rather than px and %
