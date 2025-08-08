@@ -1,5 +1,5 @@
 import React from 'react'
-import {PaintBrushIcon, UserCircleIcon, DevicePhoneMobileIcon} from '@heroicons/react/24/outline'
+import {PaintBrushIcon, UserCircleIcon, DevicePhoneMobileIcon, ArrowPathIcon} from '@heroicons/react/24/outline'
 import { Laugh, Dumbbell, ScrollText, GraduationCap } from "lucide-react";
 
 import Projects from '../components/Projects'
@@ -55,10 +55,16 @@ function ServicesProjects() {
           <h1 className='font-semibold text-md md:text-lg'>User-Centered Interface Design</h1>
           <p className='text-sm md:text-base'>I design layouts and navigation that make it easy for visitors to find what they need, improving overall usability and satisfaction.</p>
         </div>
+
+        <div className='shadow-md shadow-gray-300 p-2 rounded-xl'>
+          <ArrowPathIcon className='w-8 md:w-9'/>
+          <h1 className='font-semibold text-md md:text-lg'>Website Maintenance and Updates</h1>
+          <p className='text-sm md:text-base'>I provide regular updates, content changes, and technical support to keep your website secure, up-to-date, and running smoothly as your business evolves.</p>
+        </div>
       </div>
 
       <div className='my-10'>
-        <h1 className='flex items-center text-xl font-semibold my-4'>My Small Projects</h1>
+        <h1 className='flex items-center text-2xl font-semibold my-4'>My Small Projects</h1>
         <div className='grid grid-cols-1 gap-5 md:grid-cols-2'>
           <Projects 
             title={"My Portfolio"} 

@@ -10,7 +10,7 @@ function Projects({title, Icon, description, image, alt, titleColor, iconColor, 
 
         <p className="text-sm text-white md:text-lg">{description}</p>
       </span>
-      <img className='border rounded-md mt-3' onClick={onClick} src={image} alt={alt} />
+      <img className='border rounded-md mt-3 hover:cursor-pointer active:cursor-wait' onClick={onClick} src={image} alt={alt} />
     </div>
   )
 }

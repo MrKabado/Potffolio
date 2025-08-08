@@ -6,7 +6,7 @@ import Button from '../components/Button'
 
 function ContactMe() {
   return (
-    <div className='p-5 text-[#1E293B] border-l-5 rounded-2xl font-poppins'>
+    <div className='p-5 text-[#1E293B] border-l-5 rounded-2xl font-poppins flex flex-col items-center'>
       <div className='text-center'>
         <h1 className='text-xl font-semibold mb-3 md:text-2xl'>Contact Me</h1>
         <p className='text-sm md:text-lg'>Feel free to reach out for collaborations, questions, or just to say hello!</p>
@@ -32,10 +32,10 @@ function ContactMe() {
         </div>
       </div>
 
-      <div className='flex flex-col gap-3'>
-        <input type="text" placeholder='Your Name' className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-[#1E293B] focus:outline-[#1E293B] md:text-lg'/>
-        <input type="email" placeholder='Your Email' className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-[#1E293B] focus:outline-[#1E293B] md:text-lg'/>
-        <textarea name="" id="" cols="30" rows="5" placeholder='Your Message' className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-[#1E293B] focus:outline-[#1E293B] md:text-lg'></textarea>
+      <div className='flex flex-col gap-3 w-full sm:w-[70%] md:w-[70%] lg:w-[70%]'>
+        <input type="text" placeholder='Your Name' className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-slate-600 focus:outline-[#1E293B] md:text-lg'/>
+        <input type="email" placeholder='Your Email' className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-slate-600 focus:outline-[#1E293B] md:text-lg'/>
+        <textarea name="" id="" cols="30" rows="5" placeholder='Your Message' className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-slate-600 focus:outline-[#1E293B] md:text-lg'></textarea>
         <Button text={"Submit Message"} className={"border py-1 px-4 rounded-lg bg-[#1E293B] text-white md:text-lg"} divclassName={"flex justify-center w-auto"}/>
       </div>
     </div>
