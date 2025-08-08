@@ -16,7 +16,7 @@ function Homepage() {
           </h1>
 
           <Button to={"/contact-me"} text={"Contact Me Now "} icon={<PhoneArrowDownLeftIcon className='inline-block w-5'/>} 
-          className={"font-poppins py-2 px-8 text-center text-[1rem] rounded-xl bg-[#1E293B] text-white sm:py-4 sm:text-lg"} 
+          className={"font-poppins py-2 px-8 text-center text-[1rem] rounded-xl bg-[#1E293B] text-white sm:text-base"} 
           divclassName={"flex justify-center md:w-full md:justify-baseline md:justify-start"}/>
         </div>
       </div>
