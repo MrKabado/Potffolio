@@ -29,4 +29,9 @@ project4 sky-300
 div shadow-md shadow-gray-300
 
 title page text-xl semibold
+
+sm text-lg title-text-2rem
+
+md main title - 2xl
+md p - lg
   
