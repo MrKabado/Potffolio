@@ -17,10 +17,18 @@ function ContactMe() {
         </div>
 
         <div className='flex my-5 justify-center w-full md:w-fit mx-auto'>
-          <a href="https://www.facebook.com/jersonjay.bonghanoy"><FontAwesomeIcon icon={faFacebook} className='text-3xl md:text-4xl'/></a>
-          <a href="https://www.instagram.com/jerson_jay18/"><FontAwesomeIcon icon={faInstagram} className='text-3xl md:text-4xl'/></a>
-          <a href="https://github.com/MrKabado/"><FontAwesomeIcon icon={faGithub} className='text-3xl md:text-4xl'/></a>
-          <a href="https://www.linkedin.com/in/bonghanoy-jerson-jay-49b205378/"><FontAwesomeIcon icon={faLinkedin} className='text-3xl md:text-4xl'/></a>
+          <a href="https://www.facebook.com/jersonjay.bonghanoy" className='m-1'>
+            <FontAwesomeIcon icon={faFacebook} className='text-3xl md:text-4xl'/>
+          </a>
+          <a href="https://www.instagram.com/jerson_jay18/" className='m-1'>
+            <FontAwesomeIcon icon={faInstagram} className='text-3xl md:text-4xl'/>
+          </a>
+          <a href="https://github.com/MrKabado/" className='m-1'>
+            <FontAwesomeIcon icon={faGithub} className='text-3xl md:text-4xl'/>
+          </a>
+          <a href="https://www.linkedin.com/in/bonghanoy-jerson-jay-49b205378/" className='m-1'>
+            <FontAwesomeIcon icon={faLinkedin} className='text-3xl md:text-4xl'/>
+          </a>
         </div>
       </div>
 
