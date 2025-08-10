@@ -12,7 +12,7 @@ function Aboutmepage() {
   }
 
   return (
-    <div className='p-5 text-[#1E293B] border-l-5 rounded-2xl font-poppins'>
+    <div className='p-5 text-[#1E293B] border-l-5 rounded-2xl font-poppins xl:px-20'>
       <h1 className='flex items-center text-xl font-semibold md:text-2xl'><UserIcon className='w-8 md:w-10'/>Who Am I?</h1>
       <div className='border p-2 mt-5 mb-10 bg-[#1E293B] rounded-lg'>
         <p className='text-white text-justify md:text-lg'>Hi, I’m Jerson Jay — a dedicated Information Technology student passionate about turning ideas into digital solutions. I have a passion for technology and a knack for problem-solving, aiming to create innovative solutions that meet and exceed expectations.</p>
@@ -94,8 +94,8 @@ function Aboutmepage() {
 
       <div className='p-2 my-10 shadow-md shadow-gray-300 rounded-lg'>
         <h1 className='font-semibold text-xl my-2 md:text-2xl'>Ready to bring ideas to life?</h1>
-        <p className='text-[#1E293B] text-sm md:text-lg'>I offer creative, reliable, and efficient solutions that go beyond just code. Tap in and explore what I can do for you — because your next big project deserves nothing less.
-        </p><Button to={"/contact-me"} text={"Reach Out!"} className={"text-blue-500 inline-block md:text-lg"}/>
+        <p className='text-[#1E293B] text-sm md:text-lg'>I offer creative, reliable, and efficient solutions that go beyond just code. Tap in and explore what I can do for you — because your next big project deserves nothing less.</p>
+        <Button to={"/contact-me"} text={"Reach Out!"} className={"text-blue-500 inline-block md:text-lg hover:text-blue-700"}/>
       </div>
     </div>
   )

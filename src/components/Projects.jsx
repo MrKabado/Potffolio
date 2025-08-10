@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Projects({title, Icon, description, image, alt, titleColor, iconColor, onClick}) {
+function Projects({title, Icon, description, image, alt, titleColor, iconColor, onClick, imgClass}) {
   return (
     <div className='w-full border p-3 rounded-xl bg-[#1E293B] flex flex-col justify-between'>
       <span>
@@ -10,7 +10,7 @@ function Projects({title, Icon, description, image, alt, titleColor, iconColor, 
 
         <p className="text-sm text-white md:text-lg">{description}</p>
       </span>
-      <img className='border rounded-md mt-3 hover:cursor-pointer active:cursor-wait' onClick={onClick} src={image} alt={alt} />
+      <img className={`border-2 border-transparent transiton duration-100 rounded-md mt-3 hover:cursor-pointer active:cursor-wait ${imgClass} hover:border-white`} onClick={onClick} src={image} alt={alt} />
     </div>
   )
 }
