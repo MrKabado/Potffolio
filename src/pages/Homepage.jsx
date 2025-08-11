@@ -5,7 +5,7 @@ import {HandRaisedIcon, PhoneArrowDownLeftIcon} from '@heroicons/react/24/outlin
 
 function Homepage() {
   return (
-    <div className='flex flex-col gap-10 overflow-hidden items-center w-full justify-evenly xl:px-20'>
+    <div className='flex flex-col gap-10 overflow-hidden items-center w-full justify-evenly xl:px-10'>
       <div className='flex flex-col gap-10 items-center md:flex-row-reverse md:mt-15 md:w-full md:justify-evenly'>
         <div className='flex justify-center sm:w-fit md:w-auto md:self-baseline w-full'>
           <img src={ProfilePic} alt="profile picture" className='w-[50%] border-[#1E293B] border-4 rounded-full bg-[#1E293B] md:w-[60%] lg:w-[70%]'/>

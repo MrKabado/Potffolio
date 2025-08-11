@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-      <div className='mx-5 my-5'>
+      <div className='mx-5 my-5  xl:px-10'>
       <Routes>
         <Route path='/' element={<Homepage />}/>
         <Route path='/aboutme' element={<Aboutmepage />}/>

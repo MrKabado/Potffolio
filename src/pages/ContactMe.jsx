@@ -6,7 +6,7 @@ import Button from '../components/Button'
 
 function ContactMe() {
   return (
-    <div className='p-5 text-[#1E293B] border-l-5 rounded-2xl font-poppins flex flex-col items-center xl:px-20'>
+    <div className='p-5 text-[#1E293B] border-l-5 rounded-2xl font-poppins flex flex-col items-center xl:px-10'>
       <div className='text-center'>
         <h1 className='text-xl font-semibold mb-3 md:text-2xl'>Contact Me</h1>
         <p className='text-sm md:text-lg'>Feel free to reach out for collaborations, questions, or just to say hello!</p>
