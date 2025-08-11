@@ -6,14 +6,11 @@ import Homepage from './pages/Homepage'
 import Aboutmepage from './pages/Aboutmepage'
 import ServicesProjects from './pages/ServicesProjects'
 import ContactMe from './pages/ContactMe'
-import Headroom from 'react-headroom'
 
 function App() {
   return (
     <BrowserRouter>
-      <Headroom>
-        <Header />
-      </Headroom>
+      <Header />
       <div className='mx-5 my-5'>
       <Routes>
         <Route path='/' element={<Homepage />}/>
