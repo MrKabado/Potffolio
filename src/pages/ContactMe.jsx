@@ -1,10 +1,32 @@
 import React from 'react'
+import { useState } from 'react';
 import {PhoneIcon, EnvelopeIcon} from '@heroicons/react/24/outline';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import Button from '../components/Button'
 
 function ContactMe() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [textMessage, setTextMessage] = useState("");
+
+  const submitData = (e) => {
+    e.preventDefault();
+
+    fetch("http://localhost:8080/data", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, textMessage })
+    })
+
+    .then(res => res.json())
+    .then(data => {
+      console.log("Server responded with:", data);
+      alert(data.message);
+    })
+    .catch(err => console.error("Error:", err));
+  }
+
   return (
     <div className='p-5 text-[#1E293B] border-l-5 rounded-2xl font-poppins flex flex-col items-center xl:px-10'>
       <div className='text-center'>
@@ -32,18 +54,46 @@ function ContactMe() {
         </div>
       </div>
 
-      <div className='flex flex-col gap-3 w-full sm:w-[70%] md:w-[70%] lg:w-[70%]'>
+      <form onSubmit={submitData} className='flex flex-col gap-3 w-full sm:w-[70%] md:w-[70%] lg:w-[70%]'>
         <input 
           type="text" 
           placeholder='Your Name'
-          className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-slate-400 focus:outline-[#1E293B] md:text-lg border-2 border-transparent transition hover:border-[#1E293B]'/>
-        <input type="email" placeholder='Your Email' className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-slate-400 focus:outline-[#1E293B] md:text-lg border-2 border-transparent transition hover:border-[#1E293B]'/>
-        <textarea name="" id="" cols="30" rows="5" placeholder='Your Message' className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-slate-400 focus:outline-[#1E293B] md:text-lg border-2 border-transparent transition hover:border-[#1E293B]'></textarea>
-        <Button 
+          className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-slate-400 focus:outline-[#1E293B] md:text-lg border-2 border-transparent transition hover:border-[#1E293B]'
+          value={name}
+          onChange={e => setName(e.target.value)}
+          required
+        />
+
+
+        <input 
+          type="email" 
+          placeholder='Your Email' 
+          className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-slate-400 focus:outline-[#1E293B] md:text-lg border-2 border-transparent transition hover:border-[#1E293B]'
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+          required
+        />
+        
+        <textarea 
+          name="" 
+          id="" 
+          cols="30" 
+          rows="5" 
+          placeholder='Your Message' 
+          className='shadow shadow-gray-300 p-1 text-center rounded-lg placeholder-slate-400 focus:outline-[#1E293B] md:text-lg border-2 border-transparent transition hover:border-[#1E293B]'
+          value={textMessage}
+          onChange={e => setTextMessage(e.target.value)}
+          required
+          >
+          
+        </textarea>
+        
+        <Button
+          type={"submit"}
           text={"Submit Message"} 
-          className={"border py-1 px-4 rounded-lg bg-[#1E293B] text-white md:text-lg transition-transform hover:scale-[1.03]"} 
+          className={"border py-1 px-4 rounded-lg bg-[#1E293B] text-white md:text-lg transition-transform hover:scale-[1.03] cursor-pointer"} 
           divclassName={"flex justify-center w-auto"}/>
-      </div>
+      </form>
     </div>
   )
 }
