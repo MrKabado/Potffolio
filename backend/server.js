@@ -6,7 +6,9 @@ const app = express();
 
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://your-frontend-service.onrender.com'
+}));
 
 //app get is getting a data to the server
 app.get('/', (req, res) => {
