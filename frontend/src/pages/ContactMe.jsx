@@ -13,7 +13,7 @@ function ContactMe() {
   const submitData = (e) => {
     e.preventDefault();
 
-    fetch("https://bonghanoy-jerson-jay-portfolio.onrender.com/data", {
+    fetch("http://localhost:8080/data", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, textMessage })
