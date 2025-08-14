@@ -6,7 +6,11 @@ const app = express();
 
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: ["https://potffolio-one.vercel.app/"],
+  methods: ["GET", "POST"], 
+  allowedHeaders: ["Content-Type"]
+}));
 
 //app get is getting a data to the server
 app.get('/', (req, res) => {
