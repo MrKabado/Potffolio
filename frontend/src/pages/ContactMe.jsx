@@ -10,6 +10,7 @@ function ContactMe() {
   const [email, setEmail] = useState("");
   const [textMessage, setTextMessage] = useState("");
 
+
   const submitData = (e) => {
     e.preventDefault();
 
@@ -24,6 +25,11 @@ function ContactMe() {
     .then(data => {
       console.log("Server responded with:", data);
       alert(data.message);
+
+      setName("");
+      setEmail("");
+      setTextMessage("");
+        
     })
     .catch(err => console.error("Error:", err));
   }
