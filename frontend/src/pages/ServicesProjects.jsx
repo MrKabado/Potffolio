@@ -12,6 +12,7 @@ import Portfolio2 from '../assets/Portfolio2.png'
 
 
 function ServicesProjects() {
+
   const fitExpert = () => {
     window.open('https://fitxpert.netlify.app/', '_blank');
   }
@@ -73,7 +74,7 @@ function ServicesProjects() {
             image={Portfolio1}
             alt={"Portfolio"}
             titleColor={"text-blue-400"}
-            onClick={fitExpert}
+            onClick={portfolio1}
           />
 
           <Projects 
@@ -83,7 +84,7 @@ function ServicesProjects() {
             image={RandomJokes}
             alt={"Random Jokes"}
             titleColor={"text-[#8DA4D0]"}
-            onClick={fitExpert}
+            onClick={randomJokes}
           />
 
           <Projects 
@@ -103,7 +104,7 @@ function ServicesProjects() {
             image={IntramsSurvey}
             alt={"Intrams Survey"}
             titleColor={"text-sky-300"}
-            onClick={fitExpert}
+            onClick={intramsSurvey}
           />
 
           <Projects 
