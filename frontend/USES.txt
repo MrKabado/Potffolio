@@ -34,4 +34,24 @@ sm text-lg title-text-2rem
 
 md main title - 2xl
 md p - lg
+
+
+
+<div className='shadow-md shadow-gray-300 p-2 rounded-xl transition-all duration-400  hover:-translate-y-3 hover:bg-[#1E293B] hover:text-white cursor-default'>
+          <DevicePhoneMobileIcon className='w-8 md:w-9'/>
+          <h1 className='font-semibold text-md md:text-lg'>Responsive and Cross-Device Layouts</h1>
+          <p className='text-sm md:text-base'>Your website will look great and work smoothly on desktops, tablets, and mobile devices, ensuring a consistent experience for all users.</p>
+        </div>
+
+        <div className='shadow-md shadow-gray-300 p-2 rounded-xl transition-all duration-400  hover:-translate-y-3 hover:bg-[#1E293B] hover:text-white cursor-default'>
+          <UserCircleIcon className='w-8 md:w-9'/>
+          <h1 className='font-semibold text-md md:text-lg'>User-Centered Interface Design</h1>
+          <p className='text-sm md:text-base'>I design layouts and navigation that make it easy for visitors to find what they need, improving overall usability and satisfaction.</p>
+        </div>
+
+        <div className='shadow-md shadow-gray-300 p-2 rounded-xl transition-all duration-400  hover:-translate-y-3 hover:bg-[#1E293B] hover:text-white cursor-default'>
+          <ArrowPathIcon className='w-8 md:w-9'/>
+          <h1 className='font-semibold text-md md:text-lg'>Website Maintenance and Updates</h1>
+          <p className='text-sm md:text-base'>I provide regular updates, content changes, and technical support to keep your website secure, up-to-date, and running smoothly as your business evolves.</p>
+        </div>
   
