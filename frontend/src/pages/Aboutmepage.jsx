@@ -11,6 +11,51 @@ function Aboutmepage() {
     setShowBackground(!showBackground);
   }
 
+  const skillsData = [
+    {
+      Icon: CodeBracketSquareIcon,
+      divClass: "hover:border-[#d946ef]",
+      title: "Front-End Development",
+      titleClass: "text-[#d946ef]",
+      description: "HTML, CSS, JavaScript, ReactJS, Tailwind CSS",
+    },
+    {
+      Icon: DevicePhoneMobileIcon,
+      divClass: "hover:border-[#22d3ee]",
+      title: "Responsive Web Design",
+      titleClass: "text-[#22d3ee]",
+      description: "Creating mobile-friendly and user-focused layouts",
+    },
+    {
+      Icon: AdjustmentsHorizontalIcon,
+      divClass: "hover:border-[#fb923c]",
+      title: "Basic UI/UX Design",
+      titleClass: "text-[#fb923c]",
+      description: "Designing clean, simple, and intuitive interfaces",
+    },
+    {
+      Icon: ArrowsRightLeftIcon,
+      divClass: "hover:border-[#40c370]",
+      title: "Version Control",
+      titleClass: "text-[#40c370]",
+      description: "Basic knowledge of Git and GitHub for tracking and collaborating",
+    },
+    {
+      Icon: LightBulbIcon,
+      divClass: "hover:border-[#a855f7]",
+      title: "Continuous Learning",
+      titleClass: "text-[#a855f7]",
+      description: "Always exploring new tools and improving current skills",
+    },
+    {
+      Icon: Cog6ToothIcon,
+      divClass: "hover:border-red-500",
+      title: "Code Optimization",
+      titleClass: "text-red-500",
+      description: "Focused on improving software performance through efficient coding and debugging.",
+    }
+  ];
+
   return (
     <div className='p-5 text-[#1E293B] border-l-5 rounded-2xl font-poppins xl:px-10'>
       <h1 className='flex items-center text-xl font-semibold md:text-2xl'><UserIcon className='w-8 md:w-10'/>Who Am I?</h1>
@@ -43,53 +88,18 @@ function Aboutmepage() {
 
       <h1 className='font-semibold text-xl my-5 md:text-2xl'>My Skills</h1>
       <div className='grid grid-cols-1 grid-rows-6 gap-5 sm:grid-cols-2 sm:grid-rows-3'>
-        <Skills 
-          Icon={CodeBracketSquareIcon}
-          divClass={"hover:border-[#d946ef]"}
-          title={"Front-End Development"}
-          titleClass={"text-[#d946ef]"}
-          description={"HTML, CSS, JavaScript, ReactJS, Tailwind CSS"}
-        />
-
-        <Skills 
-          Icon={DevicePhoneMobileIcon}
-          divClass={"hover:border-[#22d3ee]"}
-          title={"Responsive Web Design"}
-          titleClass={"text-[#22d3ee]"}
-          description={"Creating mobile-friendly and user-focused layouts"}
-        />
-
-        <Skills 
-          Icon={AdjustmentsHorizontalIcon}
-          divClass={"hover:border-[#fb923c]"}
-          title={"Basic UI/UX Design"}
-          titleClass={"text-[#fb923c]"}
-          description={"Designing clean, simple, and intuitive interfaces"}
-        />
-
-        <Skills 
-          Icon={ArrowsRightLeftIcon}
-          divClass={"hover:border-[#40c370]"}
-          title={"Version Control"}
-          titleClass={"text-[#40c370]"}
-          description={"Basic knowledge of Git and GitHub for tracking and collaborating"}
-        />
-
-        <Skills 
-          Icon={LightBulbIcon}
-          divClass={"hover:border-[#a855f7]"}
-          title={"Continuous Learning"}
-          titleClass={"text-[#a855f7]"}
-          description={"Always exploring new tools and improving current skills"}
-        />
-    
-        <Skills 
-          Icon={Cog6ToothIcon}
-          divClass={"hover:border-red-500"}
-          title={"Code Optimization"}
-          titleClass={"text-red-500"}
-          description={"Focused on improving software performance through efficient coding and debugging."}
-        />
+        {
+          skillsData.map((skills, index) => (
+            <Skills
+              key={index}
+              Icon={skills.Icon}
+              divClass={skills.divClass}
+              title={skills.title}
+              titleClass={skills.titleClass}
+              description={skills.description}
+            />
+          ))
+        }
       </div>
 
       <div className='p-2 my-10 shadow-md shadow-gray-300 rounded-lg'>
