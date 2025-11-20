@@ -11,6 +11,7 @@ import {
   ScrollText,
   GraduationCap,
   ShoppingCart,
+  Cpu
 } from "lucide-react";
 
 import Projects from "../components/Projects";
@@ -21,6 +22,8 @@ import RandomJokes from "../assets/output-2.png";
 import IntramsSurvey from "../assets/IntramsSurvey.png";
 import Portfolio2 from "../assets/Portfolio2.png";
 import RandomShii from "../assets/random-shii.png";
+import fcfs from "../assets/fcfs.png";
+
 
 function ServicesProjects() {
   // For external links
@@ -31,6 +34,7 @@ function ServicesProjects() {
     randomJokes: "https://random-fun-jokes.netlify.app/",
     portfolio2: "https://bonghanoy-jerson-jay-portfolio.netlify.app/",
     randomshii: "https://random-shii.vercel.app/",
+    cpuSchedulingFcfs: "https://cpu-scheduling-fcfs-jjb.netlify.app/",
   };
 
   // Offer data
@@ -123,6 +127,16 @@ function ServicesProjects() {
       titleColor: "text-gray-200",
       link: projectLinks.randomshii,
     },
+    {
+      title: "CPU Scheduling (FCFS)",
+      Icon: Cpu,
+      description:
+        "A web application that simulates the First-Come, First-Served (FCFS) CPU scheduling algorithm, allowing users to input processes and visualize scheduling results.",
+      image: fcfs,
+      alt: "CPU Scheduling FCFS",
+      titleColor: "text-yellow-400",
+      link: projectLinks.cpuSchedulingFcfs,
+    }
   ];
 
   return (
