@@ -11,7 +11,8 @@ import {
   ScrollText,
   GraduationCap,
   ShoppingCart,
-  Cpu
+  Cpu,
+  LibraryBig
 } from "lucide-react";
 
 import Projects from "../components/Projects";
@@ -23,6 +24,7 @@ import IntramsSurvey from "../assets/IntramsSurvey.png";
 import Portfolio2 from "../assets/Portfolio2.png";
 import RandomShii from "../assets/random-shii.png";
 import fcfs from "../assets/fcfs.png";
+import CpcLibrarySystem from "../assets/CpcLibrarySystem.jpg"
 
 
 function ServicesProjects() {
@@ -35,6 +37,7 @@ function ServicesProjects() {
     portfolio2: "https://bonghanoy-jerson-jay-portfolio.netlify.app/",
     randomshii: "https://random-shii.vercel.app/",
     cpuSchedulingFcfs: "https://cpu-scheduling-fcfs-jjb.netlify.app/",
+    cpcLibrarySystem: "",
   };
 
   // Offer data
@@ -136,6 +139,14 @@ function ServicesProjects() {
       alt: "CPU Scheduling FCFS",
       titleColor: "text-yellow-400",
       link: projectLinks.cpuSchedulingFcfs,
+    },
+    {
+      title: "Cpc Library System",
+      Icon: LibraryBig,
+      description: "A full-stack Library Management System with a dedicated frontend and backend designed to handle secure authentication, book transactions, and efficient library record management.",
+      image: CpcLibrarySystem,
+      alt: "Cpc Library System",
+      titleColor: "text-indigo-500",
     }
   ];
 
