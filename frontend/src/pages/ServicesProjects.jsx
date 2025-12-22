@@ -37,7 +37,7 @@ function ServicesProjects() {
     portfolio2: "https://bonghanoy-jerson-jay-portfolio.netlify.app/",
     randomshii: "https://random-shii.vercel.app/",
     cpuSchedulingFcfs: "https://cpu-scheduling-fcfs-jjb.netlify.app/",
-    cpcLibrarySystem: "",
+    cpcLibrarySystem: "https://cpc-library-management-system.vercel.app/",
   };
 
   // Offer data
