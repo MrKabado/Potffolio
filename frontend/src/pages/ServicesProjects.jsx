@@ -147,6 +147,7 @@ function ServicesProjects() {
       image: CpcLibrarySystem,
       alt: "Cpc Library System",
       titleColor: "text-indigo-500",
+      link: projectLinks.cpcLibrarySystem,
     }
   ];
 
